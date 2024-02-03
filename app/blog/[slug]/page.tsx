@@ -6,7 +6,7 @@ import { PortableText } from '@portabletext/react'
 import Image from 'next/image'
 import React from 'react'
 
-export const revalidate = 30 //refresh after 30 seconds
+export const revalidate = 60 //refresh after 60 seconds
 
 async function fetchBlog(slug: string) {
     const query = `

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { client, urlFor } from "./lib/sanity";
 import { postType } from "./lib/postType";
 
-export const revalidate = 30 //refresh after 30 seconds
+export const revalidate = 60 //refresh after 60 seconds
 
 async function fetchData() {
   const query = `
