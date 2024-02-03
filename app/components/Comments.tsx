@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Comments() {
     return (
-        <div className='mt-8'>
+        <div className='mt-16'>
             <h2 className='text-2xl font-bold'>Comments</h2>
             <ul>
                 <li className='mb-4 bg-gray-600 p-2'>
