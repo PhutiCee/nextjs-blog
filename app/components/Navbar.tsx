@@ -9,6 +9,10 @@ export default function Navbar() {
     const toggleMobileMenu = () => {
         setMobileMenuOpen(!isMobileMenuOpen);
     };
+
+    const closeMobileMenu = () =>{
+        setMobileMenuOpen(false)
+    }
     return (
         // <header className='bg-gray-600 p-3 dark:bg-gray-200 shadow-lg'>
         //     <nav className='flex justify-between items-center max-w-4xl mx-auto'>
@@ -30,7 +34,7 @@ export default function Navbar() {
         <div>
             <nav className="bg-gray-600 border-gray-200 shadow-md dark:bg-gray-300">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:max-w-4xl lg:max-w-5xl">
-                    <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+                    <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse" onClick={closeMobileMenu}>
                         <h2 className="self-center text-2xl font-bold whitespace-nowrap">Blog<span className='text-blue-500'>IT</span></h2>
                     </Link>
                     <button
@@ -50,22 +54,22 @@ export default function Navbar() {
                     <div className={`w-full md:block md:w-auto ${isMobileMenuOpen ? 'block' : 'hidden'}`} id="navbar-default">
                         <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-300 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-300 md:dark:bg-gray-300 dark:border-gray-700">
                             <li>
-                                <Link href="/" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:bg-transparent">
+                                <Link href="/" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:bg-transparent" onClick={closeMobileMenu}>
                                     Home
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/about" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:bg-transparent">
+                                <Link href="/about" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:bg-transparent" onClick={closeMobileMenu}>
                                     About
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/contact" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:bg-transparent">
+                                <Link href="/contact" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:bg-transparent" onClick={closeMobileMenu}>
                                     Contacts
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/team" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:bg-transparent">
+                                <Link href="/team" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:bg-transparent" onClick={closeMobileMenu}>
                                     Team
                                 </Link>
                             </li>
