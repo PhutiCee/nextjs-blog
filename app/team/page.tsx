@@ -22,7 +22,7 @@ export default function page() {
                             <h3 className="text-xl font-bold tracking-tight text-gray-900 ">
                                 <Link href="#">Phuti Sekwadi</Link>
                             </h3>
-                            <span className="text-gray-500 ">CEO & Web Developer</span>
+                            <span className="text-gray-500 ">CEO & Software Developer</span>
                             <p className="mt-3 mb-4 font-light text-gray-500 ">Phuti drives the technical strategy of the blogIT platform and brand.</p>
                             <ul className="flex space-x-4 sm:mt-0">
                                 <li>
@@ -52,10 +52,10 @@ export default function page() {
                         <Image className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src={'/home.jpg'} width={200} height={200} alt="Phuti Sekwadi Avatar" />
                         <div className="p-5">
                             <h3 className="text-xl font-bold tracking-tight text-gray-900 ">
-                                <Link href="#">Phuti Sekwadi</Link>
+                                <Link href="#">Still under construction</Link>
                             </h3>
-                            <span className="text-gray-500 ">CEO & Web Developer</span>
-                            <p className="mt-3 mb-4 font-light text-gray-500 ">Phuti drives the technical strategy of the blogIT platform and brand.</p>
+                            <span className="text-gray-500 ">Awaiting assessment</span>
+                            <p className="mt-3 mb-4 font-light text-gray-500 ">Stay tuned to find out who will be part of Us.</p>
                             <ul className="flex space-x-4 sm:mt-0">
                                 <li>
                                     <Link href="#" className="text-gray-500 hover:text-gray-900 ">
